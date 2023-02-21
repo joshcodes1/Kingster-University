@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/tour.css">
+    <title>Kingster University</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="secondary-nav-bar">
+                <ul class="secondary-links">
+                    
+                </ul>
+                <ul class="primary-links">
+
+                </ul>
+            </div>
+
+            <div class="primary-nav-bar">
+                <div class="logo">
+                    <img src="./assets/images/66467-OC1Z3T-562_1676535539603.jpg" alt="">
+                    <h3>
+                        Kingster <span>University</span>
+                    </h3>
+                </div>
+                <button  id="opn-btn">
+                    <img src="./assets/images/open.png" onclick="opn()"  alt="">
+                </button>
+
+                <div class="nav-links">
+                    <button   id="x-btn">
+                        <img src="./assets/images/close.png" onclick="cls()" alt="">
+                    </button>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Courses</a></li>
+                    <li><a href="">Apply</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li id="join-btn"><a href="join.html">Join</a></li>
+                    <li id="login-btn"><a href="login.html">Login</a></li>
+                </div>
+            </div>
+        </div>
+
+
+            <div class="main-tour">
+                <div class="tour">
+                    <img src="./assets/images/kingster1.jpg" alt="">                
+                    <h2 class="project-header">
+                        Kingster university
+                    </h2>
+                </div>
+
+                <div class="tour">
+                    <img src="./assets/images/library.jpg" alt="">                
+                    <h2 class="project-header">
+                        library
+                    </h2>
+                </div>
+    
+                <div class="tour">
+                    <img src="./assets/images/sports.jpg" alt="">                   
+                    <h2 class="project-header">
+                        sport center
+                    </h2>
+                </div>
+    
+                <div class="tour">
+                    <img src="./assets/images/sciencelab.jpg" alt="">                
+                    <h2 class="project-header">
+                        labouratory
+                    </h2>
+                </div>
+    
+                <div class="tour">
+                    <img src="./assets/images/lecturehall1.jpg" alt="">                
+                    <h2 class="project-header">
+                        lecture theater
+                    </h2>
+                </div>
+    
+                <div class="tour">
+                    <img src="./assets/images/Hostel.jpg" alt="">                
+                    <h2 class="project-header">
+                        Hostel
+                    </h2>
+                </div>  
+            </div>
+            <script>
+                var navLinks = 
+                document.getElementsByClassName('nav-links');
+                var closeBtn =
+                document.getElementById('x-btn');
+                var openBtn =
+                document.getElementById('opn-btn');
+                openBtn.addEventListener('click',()=>{navLinks[0].style.right ='0';})
+                closeBtn.addEventListener('click',()=>{navLinks[0].style.right ='-200px';})
+            </script>
+    </div>
+</body>
+</html>
