@@ -17,6 +17,17 @@
 .nav-links li{
     list-style-type: none;
     margin: 0 20px;
+    position: relative;
+
+}
+ .active::after{
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    right: 0px;
+    height: 4px;
+    width: 100%;
+    background-color: green;
 }
 .nav-links li a{
     text-decoration: none;
@@ -86,7 +97,6 @@
 }
 .feature-text h3{
     font-family: 'Lato';
-    font-family: 'Roboto Condensed';
 }
 .uni-intro button{
     color: #fff;
@@ -296,5 +306,8 @@
         display: block;
         text-align: center;
         width: 100%;
+    }
+    .active::after{
+      display: none;
     }
 }

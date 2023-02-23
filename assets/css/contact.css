@@ -75,32 +75,105 @@
     padding: 3px 12px;
     background: rgb(2, 2, 100);
 }
-.main-about{
-    padding:50px 30px 0  30px;
-    text-align: center;
-    width: 100%;    
-    background-image:linear-gradient(0deg, rgba(26, 6, 75, 0.837), rgba(26, 6, 75, 0.837)), url('../images/pexels-kampus-production-5940836.jpg');
+.container-two{
+    display: flex;
+    background-image:linear-gradient(0deg, rgba(1, 5, 45, 0.838), rgba(20, 3, 63, 0.837)), url('../images/lecturehall.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-}
-.main-about p{
-    color: #fff;
-    font-size: 22px;
-    font-family: 'Lato';
-}
-#logo1{
-    float:right;  
-    margin-top: 15px;
-    font-family: 'Roboto Condensed';
-    color: #fff;
-    font-size: 20px;
-}
-#logo1 span{
-    color: rgb(217, 157, 6);
+    padding: 2em;
+    justify-content: space-between;
 }
 
+.container-two h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 25px;
+}
+.container-two h1{
+    color:  rgb(217, 157, 6);
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container-two p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 17px;
+    margin-top: 11px;
+}
+.div-two{
+    width: 100%;
+    padding: 50px 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+.div-three {
+    margin-top: 12px;
+}
+.div-three a{
+    margin-top: 12px;
+    padding: 7px;
+}
+.bi-facebook{
+    color: blue;
+}
+.bi-twitter{
+    color: rgb(0, 140, 255);
+    height: 20px;
+    width: 20px;
+}
+.bi-whatsapp{
+    color: rgb(2, 172, 53);
+}
+.bi-instagram{
+    color: rgb(241, 45, 241);
+}
+.div-four{
+    border: 1px solid rgba(128, 128, 128, 0.829);
+    padding: 13px;
+    height: 70vh;
+    width: 100%;
+}
+input{
+    margin: 5px 0;
+    padding: 0 10px;
+    width: 100%;
+    height: 35px;
+    outline-color: rgb(2, 2, 100);
+}
+textarea{
+    padding: 0 10px;
+    width: 100%;
+    outline-color: #530dc8;
+}
+.div-four input[type=button]{
+    background-color:  rgb(2, 2, 100);
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 1em;
+    font-family: 'Roboto Condensed';
+}
+.container-three{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 11%;
+    margin-right: 11%;
+    padding-top: 5%;
+    font-size: 14px;
+}
+input::placeholder{
+    font-size: 15px;
+    color: rgb(2, 2, 63);
+}
+.container-four{
+    text-align: center;
+    font-family: 'Roboto Condensed';
+    font-size: 14px;
+    padding: 1.5em;
+}
 @media only screen and (max-width:600px){
     .primary-nav-bar .nav-links{
         display: block;
@@ -160,31 +233,44 @@
         border: none;
         right: 10px;
         background-color:transparent;
-        top: 10px;
     }
-    .main-about{
-        padding:50px 30px 0  30px;
-        text-align: center;
-        width: 100%;    
-        background-image:linear-gradient(0deg, rgba(26, 6, 75, 0.837), rgba(26, 6, 75, 0.837)), url('../images/pexels-yan-krukau-8199602.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
+    .container-two h4{
+        font-family: Arial, Helvetica, sans-serif;
+        color:  #fff;
+        font-size: 17px;
     }
-    .main-about p{
-        color: #fff;
+    .container-two h1{
+        color:  rgb(217, 157, 6);
         font-size: 20px;
-        font-family: 'Lato';
+        font-family: 'Roboto Condensed';
+
     }
-    #logo1{
-        float:right;  
-        margin-top: 15px;
+    .container-two p{
         font-family: 'Roboto Condensed';
         color: #fff;
-        font-size: 17px;
+        font-size: 13px;
+        margin-top: 11px;
+    }
+    .container-two{
+        display: flex;
+        height: 100vh;
+        background-color: #f9fdff;
+        padding: 50px 0 0 10px;
+        justify-content: space-between;
+    }
+    .div-two{
+        width: 100%;
+        padding: 10px 0;
+    }
+    .div-four{
+        border: 1px solid rgba(128, 128, 128, 0.829);
+        padding: 13px 8px;
+        margin: 0 10px 0 0;
+        height: 300px;
+        width: 100%;
     }
     .active::after{
         display: none;
       }
 }
+      
