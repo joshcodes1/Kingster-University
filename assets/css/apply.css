@@ -10,6 +10,11 @@
     justify-content: space-between;
     align-items: center;
 }
+#apply-btn{
+    color:#fff;
+    font-size: 18px;
+    padding-top: 10px;
+}
 .primary-nav-bar .nav-links{
     padding:0 10px;
     display: flex;
